@@ -8,7 +8,7 @@ Build-Depends: apache2-prefork-dev,
 	       bison,
 	       chrpath,
 	       debhelper (>= 5),
-	       dpkg-dev (>= 1.16.1~),
+	       dpkg-dev (>= 1.15.8.13),
 	       firebird-dev [!hurd-any !m68k !hppa !ppc64] | firebird2.5-dev [!hurd-any !m68k !hppa !ppc64] | firebird2.1-dev [!hurd-any !m68k !hppa !ppc64],
 	       flex,
 	       freetds-dev,
@@ -17,7 +17,7 @@ Build-Depends: apache2-prefork-dev,
 	       libc-client-dev,
 	       libcurl4-openssl-dev | libcurl-dev,
 	       libdb-dev,
-	       libedit-dev (>= 2.11-20080614-4),
+	       libedit-dev (>= 2.11-20080614-2),
 	       libenchant-dev,
 	       libevent-dev (>= 1.4.11),
 	       libexpat1-dev (>= 1.95.2-2.1),
@@ -86,7 +86,7 @@ Architecture: any
 Depends: ${misc:Depends},
 	 ${shlibs:Depends},
 	 sed (>= 4.1.1-1),
-	 psmisc (>= 22.15-1~),
+	 psmisc (>= 22.11-1),
 	 lsof [!kfreebsd-any !hurd-any],
 	 ucf
 Provides: php5-json, php5-mhash, ${php:Provides}
@@ -174,7 +174,7 @@ Description: server-side, HTML-embedded scripting language (CGI binary)
 
 Package: php5-cli
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, mime-support, php5-common (= ${binary:Version}), libmagic1, ucf, tzdata, libedit2 (>= 2.11-20080614-4)
+Depends: ${shlibs:Depends}, ${misc:Depends}, mime-support, php5-common (= ${binary:Version}), libmagic1, ucf, tzdata, libedit2 (>= 2.11-20080614-2)
 Provides: ${php:Provides}
 Recommends: php5-readline
 Suggests: php-pear
